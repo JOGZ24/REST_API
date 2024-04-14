@@ -1,0 +1,29 @@
+meta {
+  name: Ajouter une commande avec ses pizzas
+  type: http
+  seq: 1
+}
+
+post {
+  url: http://localhost:8080/sae-rest_groupeh_belguebli_bouin/commandes/
+  body: json
+  auth: none
+}
+
+headers {
+  Authorization: Basic anVsaWVuOmp1bGllbg==
+}
+
+body:json {
+  {
+      "id": 2,
+      "name": "cm2 ",
+      "date": "2004-05-45",
+      "list": [
+        {
+          "id": 7888
+        }
+      ]
+  }
+  
+}

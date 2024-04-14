@@ -1,0 +1,21 @@
+meta {
+  name: modifier prix pizza
+  type: http
+  seq: 5
+}
+
+patch {
+  url: http://localhost:8080/sae-rest_groupeh_belguebli_bouin/pizzas/12
+  body: json
+  auth: none
+}
+
+headers {
+  Authorization: Basic anVsaWVuOmp1bGllbg==
+}
+
+body:json {
+  {
+    "prix":"2"
+  }
+}

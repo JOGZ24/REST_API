@@ -1,0 +1,15 @@
+meta {
+  name: Supprimer une commande
+  type: http
+  seq: 5
+}
+
+delete {
+  url: http://localhost:8080/sae-rest_groupeh_belguebli_bouin/commandes/2
+  body: none
+  auth: none
+}
+
+headers {
+  Authorization: Basic anVsaWVuOmp1bGllbg==
+}
